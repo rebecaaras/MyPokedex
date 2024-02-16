@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Pokedex</title>
+
+    <!--Normalize CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--Font Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+    <!--Nosso CSS -->
+    <link rel="stylesheet" href="assets/css/global.css"> <!--OK-->
+    <link rel="stylesheet" href="assets/css/pokedex.css"><!--OK-->
+    <link rel="stylesheet" href="assets/css/modal.css"><!--OK-->
+    <link rel="shortcut icon" href="https://assets.pokemon.com/static2/_ui/img/favicon.ico"> <!--OK-->
+
+
+</head>
+<body>
+    <section class="content">
+        <div class="title-div">
+            <img src="https://assets.pokemon.com/static2/_ui/img/favicon.ico">
+            <h1 class="title">My Pokedex</h1>
+        </div>
+        
+        <input class="search-box" id="search-box" type="search" placeholder="Search your pokemon here..." >
+        
+        <ol id="pokemonList" class="pokemons">
+            <!--Pokemons here-->
+        </ol>
+
+        <div class="pagination">
+            <button id="loadMoreButton" type="button">
+                Load More
+            </button>
+        </div>
+    </section>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <p id="modal-content">Modal Content Here</p>
+        </div>
+    </div>
+
+    <!--Nosso JS-->
+    <script src="assets/js/pokemon-model.js"></script><!--OK-->
+    <script src="assets/js/poke-api.js"></script><!--OK-->
+    <script src="assets/js/main.js"></script><!--OK-->
+</body>
+
+</html>
+

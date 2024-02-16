@@ -1,0 +1,48 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#f6f8fc;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background-color: rgb(240, 238, 159);
+}
+
+img {
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.search-box {
+    border-radius: 1rem;
+    height: 2rem;
+    width: 98%;
+}
+
+.title {
+    color: #333d47;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.title-div{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 992px){
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
